@@ -4,11 +4,18 @@
 >
 > **当前版本：`v1.0.5`**（发版时请同步更新此处与 `app/build.gradle.kts` 的 `versionName`）
 
-<!-- 开源后替换为实际地址 -->
 **仓库地址：`https://github.com/zhiluo1/LawQuery`**
 **问题反馈：`https://github.com/zhiluo1/LawQuery/issues`**
 
 ![License](https://img.shields.io/badge/license-MIT-green) ![Platform](https://img.shields.io/badge/platform-Android%2026%2B-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-purple) ![Compose](https://img.shields.io/badge/Compose-Material3-blue)
+
+---
+
+## 下载安装
+
+**普通用户无需自行构建**：前往 [Releases](https://github.com/zhiluo1/LawQuery/releases) 下载最新版 APK，在 Android 8.0（API 26）及以上设备上直接安装即可（首次安装需允许「安装未知来源的应用」）。
+
+> 当前发布包为开发签名（debug）构建，供直接体验；如需正式分发，请自行配置 release 签名后重新构建，详见[四、使用说明](#四使用说明)。
 
 ---
 
