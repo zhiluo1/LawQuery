@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 系统深色模式下的窗口背景:避免冷启动/转场时白色残影(应用内深色偏好另在 Activity 根部生效) -->
+<resources>
+    <style name="Theme.LawQuery" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#101418</item>
+    </style>
+</resources>

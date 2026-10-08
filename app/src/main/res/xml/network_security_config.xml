@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  网络安全配置:全局保持禁用明文(需求 7.4)。
+  仅对「更新服务器」放行明文 —— 发布端 EXE 内置 HTTP 服务使用明文:
+  - 10.0.2.2          : 模拟器访问宿主机的标准地址(Android 模拟器固定)
+  - 192.0.2.100       : 占位示例(RFC 5737 文档地址),真机分发前改成你的实际 IP
+  正式对外分发建议为更新服务器配置 HTTPS,并将 base-config 保持禁用明文。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <domain includeSubdomains="false">192.0.2.100</domain>
+    </domain-config>
+</network-security-config>

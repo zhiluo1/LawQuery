@@ -1,0 +1,28 @@
+*.iml
+.gradle/
+build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.idea/
+.DS_Store
+
+# 构建产物与签名(永不入库)
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+
+# 本机一键脚本(含本机路径,本地保留;注意不忽略 gradlew.bat)
+启动模拟器.bat
+打开法条速查.bat
+构建APK.bat
+
+# 工作区私有目录(AI 记忆与调试产物)
+.workbuddy/
+
+# 编译临时目录与日志
+.kotlin/
+*.log

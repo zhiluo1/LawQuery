@@ -1,0 +1,372 @@
+<resources>
+    <string name="app_name">法条速查</string>
+    <string name="app_subtitle">官方来源 · 实时查询</string>
+
+    <!-- 导航 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_favorites">收藏</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 首页 -->
+    <string name="home_search_hint">搜索法律名称、条文关键词、发文字号</string>
+    <string name="home_categories_title">按分类浏览</string>
+    <string name="home_recent_title">最近浏览</string>
+    <string name="recents_title">浏览历史</string>
+    <string name="home_greeting_sub">%1$s · 愿每一条法律,都能为你答疑解惑</string>
+    <string name="home_recent_empty">暂无浏览记录。查询过的文件仅保留元数据,不保存正文。</string>
+    <string name="home_footer_note">本应用不生产、不存储任何法律文本,所有内容实时取自官方网站。</string>
+
+    <!-- 搜索 -->
+    <string name="search_action">搜索</string>
+    <string name="search_history_title">搜索历史(仅存本地,最多 50 条)</string>
+    <string name="search_history_clear">清空</string>
+    <string name="search_sort_relevance">相关度</string>
+    <string name="search_sort_date">发布日期</string>
+    <string name="search_filter_status">时效性</string>
+    <string name="search_filter_year">年份</string>
+    <string name="search_filter_authority">发文机关</string>
+    <string name="search_filter_region">地区</string>
+    <string name="filter_reset">重置</string>
+    <string name="filter_no_match_title">未找到匹配数据</string>
+    <string name="filter_no_match_suggestion">当前筛选条件下暂无数据,可更换年份或清除筛选后重试</string>
+    <string name="filter_no_status_hint">官方数据源暂未对收录文件提供该时效性标注,可清除时效性筛选后浏览全部</string>
+    <string name="browse_search_hint">在本分类内搜索,如:行政审批</string>
+    <string name="filter_search_authority">搜索发文机关</string>
+    <string name="filter_search_region">搜索地区或拼音</string>
+    <string name="filter_year_all">全部年份</string>
+    <string name="filter_authority_all">全部机关</string>
+    <string name="filter_region_all">全部地区</string>
+    <string name="search_load_more">加载更多</string>
+    <string name="search_loading_more">正在加载更多…</string>
+    <string name="search_no_more">已加载全部结果</string>
+    <string name="search_flk_card">在国家法律法规数据库中搜索『%1$s』</string>
+    <string name="search_flk_card_hint">官方直通 · 实时浏览官方页面</string>
+
+    <!-- 通用状态(F7) -->
+    <string name="state_loading">正在从官方来源获取…</string>
+    <string name="state_loading_slow">官方源响应较慢,可稍后重试</string>
+    <string name="state_empty_title">官方来源未检索到相关内容</string>
+    <string name="state_empty_suggestion">试试更换关键词,或点击上方卡片在国家法律法规数据库中查看</string>
+    <string name="state_offline_title">无法连接官方数据源,请检查网络</string>
+    <string name="state_offline_action">重试</string>
+    <string name="state_error_title">获取失败</string>
+    <string name="state_source_unavailable">%1$s来源暂不可用,已展示其他官方来源结果</string>
+
+    <!-- 详情 -->
+    <string name="detail_view_original">在官方源查看原文</string>
+    <string name="detail_read_full_official">在官方源阅读全文</string>
+    <string name="detail_toc">目录</string>
+    <string name="detail_toc_jump_hint">输入条号或板块名(如 1077 / 裁判要旨)</string>
+    <string name="detail_toc_jump">直达</string>
+    <string name="detail_toc_expand_all">全部展开</string>
+    <string name="detail_toc_collapse_all">全部折叠</string>
+    <string name="detail_toc_expand">展开</string>
+    <string name="detail_toc_collapse">折叠</string>
+    <string name="detail_article_not_found">未找到对应条号或板块,可换用名称关键词(如「要旨」「案情」)</string>
+    <string name="detail_copy_article">复制本条</string>
+    <string name="detail_share_article">分享本条</string>
+    <string name="detail_copied">已复制,内容附带来源与原文链接</string>
+    <!-- 正文区:国家法律法规数据库的正文以官方版式文件提供,由官方阅读器在应用内呈现 -->
+    <string name="detail_reader_notice">以下为官方阅读器实时内容,可上下滑动、双指放大;本应用仅提供浏览</string>
+    <!-- 阅读器工具行:整页适配 / 缩放档位说明(横幅已收进折叠区,此处只留一句短提示) -->
+    <string name="detail_reader_zoom_fit">整页</string>
+    <string name="detail_reader_zoom_in">放大</string>
+    <string name="detail_reader_zoom_out">缩小</string>
+    <string name="detail_reader_notice_short">官方阅读器实时内容,可双指缩放</string>
+    <!-- 元信息区折叠:阅读正文时把空间让给正文 -->
+    <string name="detail_info_expand">展开法规资料</string>
+    <string name="detail_info_collapse">收起资料,全屏阅读</string>
+    <string name="detail_plain_fallback">该文件未能解析出结构化条文,以下为官方页面原文文本,可点击右上角查看原文核对。</string>
+    <!-- 部分正文:官方对该文件仅开放前若干条,说明用「可阅读部分」,不提订购/位阶等内部术语 -->
+    <string name="detail_partial_body">以下为该文件当前可阅读的部分条文,完整全文需到官方页面查看。</string>
+    <string name="detail_view_full">读全文</string>
+    <string name="detail_updated_title">该文件已有更新</string>
+    <string name="detail_updated_message">该文件已有更新(公布日期:%1$s),点击查看最新版本。</string>
+    <string name="detail_updated_view">查看最新版本</string>
+    <string name="detail_updated_later">知道了</string>
+    <string name="detail_fetched_at">来源:%1$s · 获取于 %2$s</string>
+    <string name="detail_publish_date">公布日期</string>
+    <string name="detail_effective_date">施行日期</string>
+    <string name="detail_doc_number">发文字号</string>
+    <string name="detail_authority">制定/发文机关</string>
+    <string name="detail_status">时效性</string>
+    <string name="detail_favorite_add">收藏(仅保存元数据)</string>
+    <string name="detail_favorite_remove">取消收藏</string>
+    <string name="detail_source_link">来源:%1$s</string>
+    <string name="detail_share_doc">分享原文链接</string>
+
+    <!-- WebView 直通 -->
+    <string name="web_banner">以下为官方页面实时内容,本应用仅提供浏览,不解析、不存储</string>
+    <string name="web_open_in_browser">在系统浏览器打开</string>
+    <string name="web_share_link">分享原文链接</string>
+    <string name="web_refresh">刷新</string>
+    <string name="web_copy_keyword">复制搜索词</string>
+    <string name="web_keyword_copied">搜索词已复制,可在官方页面内粘贴</string>
+    <string name="web_error_title">官方页面加载失败</string>
+    <string name="web_blocked_title">即将离开官方来源</string>
+    <string name="web_blocked_message">该链接不属于官方数据源域名。为保障权威性,应用内不打开外部网站,仅允许在系统浏览器打开。\n\n%1$s</string>
+    <string name="web_error_message">页面加载失败,可重试或在系统浏览器打开官方页面。</string>
+    <string name="web_action_back">返回</string>
+
+    <!-- 收藏 -->
+    <string name="favorites_title">收藏</string>
+    <string name="favorites_slogan">有法可依 · 有据可查</string>
+    <string name="favorites_empty_title">暂无收藏</string>
+    <string name="favorites_empty_suggestion">在详情页点击收藏,仅保存标题、来源与时效性指纹等元数据,不保存正文。</string>
+    <string name="favorites_updated_badge">已更新</string>
+    <string name="favorites_checking">正在校验收藏项是否有官方更新…</string>
+    <string name="favorites_remove_confirm">确定取消收藏「%1$s」吗?</string>
+    <string name="favorites_remove">取消收藏</string>
+    <string name="favorites_cancel">取消</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_reading">阅读</string>
+    <string name="settings_font_size">正文字号(全局记忆)</string>
+    <string name="settings_dark_mode">深色模式</string>
+    <string name="settings_dark_mode_system">跟随系统</string>
+    <string name="settings_dark_mode_light">浅色</string>
+    <string name="settings_dark_mode_dark">深色</string>
+    <string name="settings_font_preview_label">阅读效果预览(字号 + 行距)</string>
+    <string name="settings_font_preview_sample">第一条 为了保护民事主体的合法权益,调整民事关系,维护社会和经济秩序,适应中国特色社会主义发展要求,弘扬社会主义核心价值观。\n第二条 民法典调整平等主体的自然人、法人和非法人组织之间的人身关系和财产关系。\n第三条 民事主体的人身权利、财产权利以及其他合法权益受法律保护,任何组织或者个人不得侵犯。</string>
+    <string name="settings_sources">数据源</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_version">版本</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="splash_loading">正在加载法律数据库…</string>
+    <string name="update_state_checking">正在检查更新…</string>
+    <string name="update_up_to_date">当前已是最新版本(%1$s)</string>
+    <string name="update_available_title">发现新版本 %1$s</string>
+    <string name="update_current_version">当前版本:%1$s</string>
+    <string name="update_notes_label">更新说明:</string>
+    <string name="update_action_download">下载并安装</string>
+    <string name="update_downloading">正在下载更新… %1$d%%</string>
+    <string name="update_ready">下载完成,即将开始安装…</string>
+    <string name="update_failed_title">检查更新失败</string>
+    <string name="update_install_perm_hint">若系统弹出提示,请允许本应用「安装未知应用」权限。</string>
+    <string name="settings_licenses">开源许可</string>
+    <string name="settings_disclaimer">免责声明</string>
+    <string name="settings_privacy">隐私政策</string>
+    <string name="settings_clear_data">清除数据</string>
+    <string name="settings_clear_history">清空搜索历史</string>
+    <string name="settings_clear_recent">清空最近浏览</string>
+    <string name="settings_clear_favorites">清空收藏</string>
+    <string name="settings_clear_confirm">确定要%1$s吗?该操作不可恢复。</string>
+    <string name="settings_clear_done">已清除</string>
+
+    <!-- 免责声明(需求 7.2.7 固定文案) -->
+    <string name="disclaimer_title">免责声明</string>
+    <string name="disclaimer_text">本应用是官方法律法规网站的查询工具,所展示内容均实时来自各官方网站,仅供参考,请以官方公布文本为准。若内容显示异常,请点击\"查看原文\"访问官方网站。</string>
+    <string name="disclaimer_ack">我已阅读并理解</string>
+
+    <!-- 隐私政策(零收集声明) -->
+    <string name="privacy_title">隐私政策</string>
+    <string name="privacy_text">本应用不采集任何个人信息:不申请与功能无关的权限(仅使用网络权限)、不包含账号体系、不集成任何第三方统计 SDK。\n\n本地仅保存:搜索历史查询词、最近浏览与收藏的文件元数据(标题/来源/链接/时效性指纹)、数据源健康状态与阅读设置。以上数据仅存于本机,不上传、不同步。\n\n法律条文正文不做任何本地缓存或持久化,每次查看均实时取自官方网站。</string>
+
+    <!-- 开源许可 -->
+    <string name="licenses_title">开源许可</string>
+    <string name="licenses_text">本应用使用了以下开源项目:\n\n· Kotlin / Jetpack Compose / AndroidX — Apache License 2.0\n· OkHttp — Apache License 2.0\n· Retrofit — Apache License 2.0\n· kotlinx.serialization / kotlinx.coroutines — Apache License 2.0\n· Room / DataStore — Apache License 2.0\n· Jsoup — MIT License\n\n感谢以上开源社区的贡献。</string>
+
+    <!-- 数据源(面向用户:一律用「收录:」体例声明覆盖的法规系列,并说明在应用内如何查阅;
+         不出现内部实现术语如效力位阶/制定机关代码/订购机制,技术细节见 docs/数据源接入说明.md) -->
+    <string name="source_gov_cn">中国政府网·政策文件库</string>
+    <string name="source_court">最高人民法院</string>
+    <string name="source_flk">国家法律法规数据库</string>
+    <string name="source_mps_reg">公安部规章库</string>
+    <string name="settings_sources_intro">应用内容全部实时来自以下官方网站,本应用不存储、不缓存任何法律文本。</string>
+    <string name="settings_source_check">测试连接</string>
+    <string name="settings_source_checking">测试中…</string>
+    <string name="source_mode_live">自动读取官网最新内容</string>
+    <string name="source_mode_browse">点击相关分类,即可在应用内直接浏览该网站官方网页,内容天然实时</string>
+    <string name="source_coverage_gov">收录:国务院文件、部委文件</string>
+    <string name="source_coverage_court">收录:最高人民法院官网发布的司法解释与司法文件</string>
+    <string name="source_coverage_flk">收录:宪法、法律、行政法规、监察法规、司法解释、地方性法规</string>
+    <string name="source_coverage_mps">收录:公安部现行有效规章</string>
+    <string name="source_health_ok">正常</string>
+    <string name="source_health_cooldown">访问受限,约 10 分钟后自动恢复</string>
+    <string name="source_health_degraded">最近访问失败,已自动切换其他来源</string>
+    <string name="source_health_unknown">尚未使用</string>
+    <string name="source_last_success">最近成功 %1$s</string>
+    <string name="source_reason_rate_limited">官方网站暂时限制了访问频率</string>
+    <string name="source_reason_timeout">官方网站响应超时</string>
+    <string name="source_reason_network">网络连接失败</string>
+    <string name="source_reason_offline">当前设备没有网络</string>
+    <string name="source_reason_parse_failed">官方页面暂时无法读取,可在详情页点击「查看原文」核对</string>
+    <string name="source_reason_not_linked">需先登录人民法院案例库官方账号后才能获取数据</string>
+    <string name="source_reason_preview_only">正文需在官方页面阅读全文。可先浏览已收录的条目录录,点击下方按钮前往官方站点继续阅读完整文本。</string>
+    <string name="source_coverage_case">收录:最高人民法院发布的指导性案例、参考案例等</string>
+
+    <!-- 分类(需求 F2) -->
+    <string name="category_constitution">宪法</string>
+    <string name="category_law">法律</string>
+    <string name="category_admin_reg">行政法规</string>
+    <string name="category_supervision">监察法规</string>
+    <string name="category_judicial">司法解释</string>
+    <string name="category_local">地方性法规</string>
+    <string name="category_state_council">国务院及部委文件</string>
+
+    <string name="browse_flk_entry">在国家法律法规数据库中查看该分类</string>
+    <!-- 多源分类(国务院及部委文件、司法解释)的按来源分组标题:来源名 + 该来源条目数 -->
+    <string name="browse_group_header">%1$s · %2$d 条</string>
+    <string name="browse_coverage_notice">可按时效性、年份、发文机关筛选,点击条目阅读正文;内容实时来自官方法规库,如需核验或查询最新修订,请点击下方「在国家法律法规数据库中查看该分类」到官方页面核对。</string>
+    <string name="browse_series_constitution">本分类收录现行有效的宪法及宪法修正案。</string>
+    <string name="browse_series_law">本分类收录全国人大及其常委会制定的法律,含现行有效与已修订版本。</string>
+    <string name="browse_series_supervision">本分类收录监察机关制定发布的监察法规,含现行有效与已修订版本。</string>
+    <string name="browse_series_local">本分类收录各省市自治区制定的地方性法规,可用「地区」筛选到具体省份。</string>
+    <string name="browse_admin_reg_note">本分类收录以国务院令(国令)公布的行政法规,含国务院制定与修订的现行版本。</string>
+    <string name="browse_judicial_note">本分类收录最高人民法院、最高人民检察院发布的司法解释,含现行有效及已修订版本;并同步最高人民法院官网发布的司法解释与司法文件。</string>
+
+    <!-- 仅官方数据库覆盖分类的直通说明(需求 F2/7.2 合规说明) -->
+    <string name="flk_direct_notice_title">关于「%1$s」分类</string>
+    <string name="flk_direct_notice_text">该分类由国家法律法规数据库(flk.npc.gov.cn)统一发布。受该网站访问政策限制,本应用不直接收录其数据,将为你打开官方页面实时浏览——内容实时、权威,与官网发布保持一致。如需查找最新法律,可在打开的官方页面内直接搜索。</string>
+    <string name="flk_direct_notice_open">打开官方页面</string>
+    <string name="flk_direct_notice_ack">不再提示</string>
+
+    <!-- 其他 -->
+    <string name="status_current">现行有效</string>
+    <string name="status_revised">已修订</string>
+    <string name="status_repealed">已废止</string>
+    <string name="status_pending">尚未生效</string>
+    <string name="action_back">返回</string>
+    <string name="action_retry">重试</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_close">关闭</string>
+
+    <!-- 参考图风格改版:首页 -->
+    <string name="home_hero_title">智能法律检索</string>
+    <string name="home_hero_subtitle">海量法律法规,精准快速查询</string>
+    <string name="home_hero_hint">请输入关键词,例如:劳动合同</string>
+    <string name="home_hot_search">热门搜索:</string>
+    <string name="home_latest_title">今日更新</string>
+    <string name="home_recent_more">更多</string>
+    <string name="home_new_badge">新</string>
+    <string name="home_browsed_suffix">%1$s浏览</string>
+    <string name="home_notifications">消息通知</string>
+    <string name="home_no_messages">暂无新消息。</string>
+    <string name="home_latest_updated_at">更新于 %1$s</string>
+    <string name="home_latest_failed">最新文件获取失败</string>
+
+    <!-- 消息通知页(应用使用规则与声明,单开界面) -->
+    <string name="notif_page_title">消息通知</string>
+    <string name="notif_subtitle">应用使用规则与重要声明</string>
+    <string name="notif_item_rules_title">使用规则与免责声明</string>
+    <string name="notif_item_rules_body">本应用是官方法律法规网站的查询工具,所展示内容均实时来自各官方网站,仅供参考,请以官方公布文本为准。若内容显示异常或正文需继续阅读,请点击详情页的「查看原文」,在官方网站核对完整文本。</string>
+    <string name="notif_item_privacy_title">隐私承诺:零收集</string>
+    <string name="notif_item_privacy_body">本应用不采集任何个人信息,仅使用基础网络权限,无账号体系、无第三方统计。本机仅保存搜索词、最近浏览与收藏的元数据及阅读设置,不上传、不同步;条文正文不做任何本地缓存。</string>
+    <string name="notif_item_sources_title">收录范围与数据来源</string>
+    <string name="notif_item_sources_body">本应用收录以下法规系列,均实时读取自官方法规库,可在应用内直接筛选与阅读:宪法;法律;行政法规(以国务院令公布);监察法规;司法解释(最高人民法院、最高人民检察院);地方性法规(按省份筛选)。此外收录国务院及部委文件、最高人民法院司法文件、指导性案例与参考案例。首次使用前需在应用内完成一次官方账号登录,登录后会话仅保存在本机。</string>
+    <string name="notif_item_realtime_title">实时更新机制</string>
+    <string name="notif_item_realtime_body">「今日更新」每次进入首页都会实时从官方网站获取最新发布文件;官方源访问受限或无网络时会提示重试,恢复后自动重试。应用不做后台轮询、不缓存过期数据。</string>
+    <string name="notif_item_favorite_title">收藏与校验</string>
+    <string name="notif_item_favorite_body">收藏仅保存标题、来源、链接与时效性指纹等元数据;再次打开时会自动与官方最新元数据比对,发现更新会提示「已更新」。</string>
+    <string name="notif_item_version_title">版本信息</string>
+    <string name="notif_item_version_body">法条速查 LawQuery v1.0.5。本次更新:新增最高人民法院官网数据源,「司法解释」收录更全;多来源分类按来源分组展示;修复发文机关筛选不生效、搜索结果与条件不一致、列表滑到底一直显示加载中、收藏分组看不到已收藏内容与更新标记不刷新等问题;并增强异常处理,提升整体稳定性。如遇到解析异常或来源不可用,应用会自动降级并提示,也可随时通过「在系统浏览器打开」访问官方网站。</string>
+    <string name="notif_read_all">已读全部</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+
+    <!-- 搜索结果页 -->
+    <string name="search_cancel">取消</string>
+    <string name="search_tab_all">全部</string>
+    <string name="search_found_count">共找到 %1$d 条结果</string>
+    <string name="search_filter_fab">筛选</string>
+    <string name="search_filter_sheet_title">结果筛选</string>
+
+    <!-- 法规详情 -->
+    <string name="detail_tab_content">正文</string>
+    <string name="detail_tab_toc">目录</string>
+    <string name="detail_collect_doc">收藏全文</string>
+    <string name="detail_copy_doc">复制全文</string>
+    <string name="detail_doc_copied">全文已复制,附带来源与原文链接</string>
+    <string name="detail_prev_article">上一条</string>
+    <string name="detail_next_article">下一条</string>
+    <string name="detail_search_in_doc">搜索条文</string>
+    <string name="detail_search_in_doc_hint">输入关键词,在当前法规条文中查找</string>
+    <string name="detail_search_in_doc_empty">当前法规未找到包含该关键词的条文</string>
+    <string name="detail_search_in_doc_count">在当前法规中找到 %1$d 条结果</string>
+    <string name="detail_publish_suffix">%1$s发布</string>
+    <string name="detail_effective_suffix">%1$s施行</string>
+
+    <!-- 收藏页 -->
+    <string name="fav_group_all">全部</string>
+    <string name="fav_group_gov">政策文件</string>
+    <string name="fav_group_court">最高法文件</string>
+    <string name="fav_group_flk">官方数据库</string>
+
+    <!-- 设置页(参考图改版) -->
+    <string name="settings_banner_title">个性化你的阅读体验</string>
+    <string name="settings_banner_subtitle">让法规阅读更轻松高效</string>
+    <string name="settings_group_reading">阅读设置</string>
+    <string name="settings_group_data">数据与同步</string>
+    <string name="settings_font_size_row">文字大小</string>
+    <string name="settings_line_spacing">行间距</string>
+    <string name="line_spacing_compact">紧凑</string>
+    <string name="line_spacing_normal">适中</string>
+    <string name="line_spacing_loose">宽松</string>
+    <string name="settings_sources_row">数据源管理</string>
+    <string name="settings_sources_summary">%1$d 个官方来源</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_cache_cleared">缓存已清除</string>
+    <string name="settings_sources_page_title">数据源管理</string>
+    <string name="settings_sources_page_caption">仅在需要时连接官方网站,应用不做后台轮询;内容实时获取,确保来源可靠。</string>
+    <string name="source_official_badge">官方数据</string>
+    <string name="source_state_prefix">状态:</string>
+    <string name="source_last_check">最近检测:%1$s</string>
+    <string name="source_check_now">立即检测</string>
+
+    <!-- 数据源管理:国家法律法规数据库(已接入,免登录) -->
+    <string name="source_flk_status_ready">已接入 · 免登录</string>
+    <string name="source_flk_ready_notice">官方免费开放、无需登录。收录:宪法、法律、行政法规、监察法规、地方性法规、司法解释;法规目录与题录经官方检索接口实时获取,正文在官方阅读器内阅读,应用不存储条文文本。</string>
+    <string name="source_flk_domain">数据域名:flk.npc.gov.cn(正文阅读器:flkofd.npc.gov.cn)</string>
+
+    <!-- 数据源管理:中国政府网 / 最高人民法院(已接入,列表抓取) -->
+    <string name="source_status_ready">已接入 · 实时获取</string>
+    <string name="source_gov_ready_notice">收录:国务院文件、部委文件。目录与正文均实时取自中国政府网官方接口,应用不存储文本。</string>
+    <string name="source_court_ready_notice">收录:最高人民法院、最高人民检察院司法文件。目录实时取自最高人民法院官网,部分正文以官方页面展示,应用不存储文本。</string>
+
+    <!-- 数据源管理:公安部规章库(已接入,免登录) -->
+    <string name="source_mps_ready_notice">收录:公安部现行有效规章。目录、题录与正文均实时取自公安部规章库官方资源,官方免费开放、无需登录,应用不存储条文文本。</string>
+
+    <!-- 生效筛选的摘要标签前缀(搜索结果区显示当前生效条件) -->
+    <string name="filter_label_status">时效:</string>
+    <string name="filter_label_year">年份:</string>
+    <string name="filter_label_region">地区:</string>
+    <string name="filter_label_authority">机关:</string>
+
+    <!-- 今日更新:分类与时效性筛选(下推到官方接口,不是客户端过滤) -->
+    <string name="latest_filter_all_categories">全部分类</string>
+    <string name="latest_filter_all_status">全部时效</string>
+    <string name="latest_no_more">已显示全部更新</string>
+    <string name="latest_filter_empty">当前时效性条件下暂无更新</string>
+
+    <!-- 数据源管理:未接入的来源说明 -->
+    <string name="source_status_not_used">未接入</string>
+    <string name="source_flk_restricted_label">政策限制 · 暂不可用</string>
+    <string name="source_flk_restricted_notice">受相关政策要求限制，该数据源现阶段不提供接入与使用，敬请谅解。</string>
+
+    <!-- 人民法院案例库(需官方账号登录后原生对接) -->
+    <string name="category_case_library">人民法院案例库</string>
+    <string name="source_alk">人民法院案例库</string>
+    <string name="fav_group_case">司法案例</string>
+    <string name="alk_login_notice_title">人民法院案例库需要登录</string>
+    <string name="alk_login_notice_text">受目标网站政策限制，人民法院案例库的案例数据仅在登录后提供。\n\n接下来将在应用内打开人民法院案例库官网登录界面，登录接口对接其官方网站；请在页面中完成你自己的账号登录，登录成功后再点击下方「我已完成登录」。\n\n登录凭据仅保存在应用运行内存中用于本次检索，不写入本地存储、不上传第三方。</string>
+    <string name="alk_login_notice_open">去登录</string>
+    <string name="alk_login_notice_ack">暂不登录</string>
+    <string name="alk_login_page_title">登录人民法院案例库</string>
+    <string name="alk_login_done_hint">请在官方页面完成登录，完成后点击下方按钮开始浏览案例</string>
+    <string name="alk_login_done">我已完成登录</string>
+    <string name="alk_marked">已完成登录</string>
+    <string name="alk_marked_message">登录状态已记录，正在进入案例浏览</string>
+    <string name="alk_login_failed">未检测到官方登录凭据，请先在页面中完成登录再点击</string>
+    <string name="alk_unlinked_label">未对接 · 需登录</string>
+    <string name="alk_linked_label">已对接 · 官方直连</string>
+    <string name="alk_unlinked_notice">该数据源需使用你自己的人民法院案例库账号完成一次官方登录，登录后可在应用内直接检索案例。</string>
+    <string name="alk_linked_notice">已完成官方登录，案例数据经官方检索接口实时获取；案例正文以官方页面展示，应用不存储。</string>
+    <string name="alk_go_login">去登录</string>
+    <string name="alk_relogin">重新登录</string>
+    <string name="alk_browse_linked_hint">已连接人民法院案例库，数据经官方检索接口实时获取</string>
+    <string name="alk_browse_unlinked_title">尚未登录人民法院案例库</string>
+    <string name="alk_browse_unlinked_text">受目标网站政策限制，案例数据需登录后获取。点击下方按钮在应用内完成官方登录，之后即可在此浏览全部案例并筛选。</string>
+    <string name="alk_session_expired">官方登录状态已失效,请重新登录后继续浏览</string>
+
+</resources>
